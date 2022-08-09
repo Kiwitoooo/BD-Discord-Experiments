@@ -1,13 +1,17 @@
-/**
+ /**
  * @name Discord Experiments
- * @author Azagaria
  * @version 1.0
- * @description Shows experiments tab
- * @updateUrl https://raw.githubusercontent.com/An00nymushun/DiscordFreeEmojis/master/DiscordExperiments.plugin.js
+ * @description Enables Discord Experiments
+ * @author Kiwito
+ * @updateUrl https://raw.githubusercontent.com/Kiwitoooo/BD-Discord-Experiments/main/DiscordExperiments.plugin.js
  */
 
-/*@cc_on
-@if (@_jscript)
+
+
+   module.exports = class Experiments{
+     
+       load() { }
+       start() {
 
 let wpRequire;
 window.webpackChunkdiscord_app.push([[ Math.random() ], {}, (req) => { wpRequire = req; }]);
@@ -22,6 +26,9 @@ usermod.exports.default.__proto__.getCurrentUser = () => ({hasFlag: () => true})
 nodes.find(x => x.name == "DeveloperExperimentStore").actionHandler["CONNECTION_OPEN"]()
 usermod.exports.default.__proto__.getCurrentUser = oldGetUser
 
-module.exports = Experiments;
 
-/*@end @*/
+}
+stop(){
+  
+}
+}
